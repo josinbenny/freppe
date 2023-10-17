@@ -1,4 +1,6 @@
 from . import __version__ as app_version
+# from __future__ import unicode_literals
+from frappe import _dict
 
 app_name = "library_management"
 app_title = "Library Management"
@@ -215,3 +217,25 @@ app_license = "MIT"
 # auth_hooks = [
 #	"library_management.auth.validate"
 # ]
+def get_context(context):
+    pass
+
+# app_include_js = [
+#     "/assets/js/library_management.min.js"
+# ]
+
+# app_include_css = [
+#     "/assets/css/library_management.css"
+# ]
+
+# website_context = {
+#     "favicon": 	"/assets/library_management/images/favicon.ico",
+#     "splash_image": "/assets/library_management/images/splash.png"
+# }
+
+
+# api_handlers = {
+#     "GET": {
+#         "/api/resource/doctype/name": "library_management.api.get_document",
+#     },
+# }
